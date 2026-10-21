@@ -33,8 +33,12 @@ table{border-collapse:collapse;width:100%;font:13px system-ui;margin:10px 0}th,t
 .empty{color:var(--mut);text-align:center;padding:50px 10px;font-family:system-ui}
 dialog{border:1px solid var(--bd);border-radius:12px;background:var(--card);color:var(--ink);max-width:420px}
 @media print{header,#left,.rg,.noprint{display:none!important}main{display:block;padding:0}.card{border:0;padding:0}.cover{page-break-after:always}body{background:#fff;color:#000}}
-</style></head><body>
-<header><div class="logo">ORYX<small>Business plans that get funded</small></div>
+.lg{height:56px;width:auto;vertical-align:middle}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .lg{filter:invert(1)}}
+:root[data-theme="dark"] .lg{filter:invert(1)}
+</style><link rel="icon" href="img/oryx-logo.png">
+</head><body>
+<header><div class="logo"><img src="img/oryx-logo.png" alt="Oryx" class="lg"><small>Business plans that get funded</small></div>
 <div class="sans" style="font-size:13px"><span id="usr">Guest</span> · <span id="lim"></span> <button onclick="dlg.showModal()" style="padding:5px 10px">Account &amp; plans</button></div></header>
 <main>
 <section id="left" class="card">
